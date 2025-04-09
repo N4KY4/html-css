@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo com HTML5</title>
+</head>
+<body>
+    <h1>Vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu proprio servidor.</p>
+
+    <!--Opção 1:-->
+    <video src="midia/meu-video.mp4.mp4" width="500" controls></video>
+
+    <!--Opção 2:-->
+    <!--Para mudar a capa do vídeo, use o parametro POSTER-->
+    <video controls width="500" poster="imagem/capa-gato.jpg" loop>
+        <source src="midia/meu-video.mp4.mp4" type="video/mp4">
+        <p>Seu computador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <!--Incorporação de vídeos externos-->
+    <h1>Inserindo de vídeos do Youtube</h1>
+    <!--Copie e cole o codigo incorporado do video que você pegou no Youtube-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nCKwUB8EVbc?si=9WthXAkQ_Lp9_F5-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></body>
+</html>

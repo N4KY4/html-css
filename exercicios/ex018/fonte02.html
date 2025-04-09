@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        /*
+        https://www.dafont.com/pt/
+        */
+        @font-face {
+            font-family: 'Creamer'; /*Coloca no nome que vc quer*/
+            src: url('fonts/Creamer.otf.otf') format('opentype');
+            /*
+            Tipos de format()
+            - opentype
+            - trutype
+            - embadded-opentype
+            - truetype-aat
+            - svg
+            */
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'Creamer', Times, serif;
+            font-size: 4em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolor distinctio minus ipsa quam libero, aperiam perspiciatis sed ratione tempore. Adipisci, libero! Aliquam libero atque reprehenderit rem illum odit voluptatem!</p>
+</body>
+</html>

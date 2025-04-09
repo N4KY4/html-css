@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classe</title>
+    <style>
+/*
+Pseudo classes são idetificadas com :
+São configurações de estado
+*/
+/*Uma div é uma divisão de áreas quaisquer*/
+        div{
+            display: inline-block; /*Fica um do lado do outro*/
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        div:hover{
+            background-color: lightcoral;
+            /*Com o haver, Vai ficar colorido quando vc passar por cima das divs*/
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>  
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>

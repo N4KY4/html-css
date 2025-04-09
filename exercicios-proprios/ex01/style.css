@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body{
+    background-color: blanchedalmond;
+}
+
+header h1{
+    text-align: center;
+}
+
+header p{
+    text-align: center;
+}
+
+main div{
+    background-color: burlywood;
+    border-radius: 20px;
+    padding: 10px;
+    margin: auto;
+}
+
+main p {
+    font-size: 1.2em;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping Tags</title>
+    <style>
+        body{
+            background-color: dimgray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        h1{
+            /*sombra para dentro -> inset*/
+            box-shadow: inset 2px 1px 8px 6px #00000069;
+        }
+
+        header{
+            background-color: beige;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: #424242;
+            padding: 3px;
+            /*deslocamento horizontal, vertical espalhamento*/
+            box-shadow: 5px 3px 7px 1px #00000069;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: beige;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: beige;
+            padding: 10px;
+            margin: 10px;
+            /*direita, esquerda, direita em baixo, esquerda em baixo*/
+            border-radius: 10px 10px 10px 10px;
+            box-shadow: 5px 3px 7px 1px #00000069;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(183, 178, 178);
+        }
+
+        footer{
+            background-color: rgb(36, 36, 36);
+            color: beige;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 1px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: aliceblue;
+            margin: 10px;
+            border-radius: 50%; /*Vai ficar redondo*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos"> 
+
+        </section>
+
+        <section id="noticias">
+            <p>Esportes Políticas e Tecnologia</p>
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, omnis tempora. Necessitatibus, tempore. Pariatur et eligendi ducimus, repellendus totam aliquam ut corrupti explicabo necessitatibus accusantium. Omnis dolores molestias error deleniti?</p>
+                <aside>
+                    <p>Artigo escrito por -</p>
+                </aside>
+
+            </article>
+                <aside>
+                </aside>
+            <article>
+                
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvovlido pelo CursoemVídeo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

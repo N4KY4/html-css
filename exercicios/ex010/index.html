@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links Externos</h1>
+    <!--Link que vai apontar para outro site-->
+    <!-- tag A é Ancora
+     href é a url que será apontada.-->
+
+     <!--OBS? Quando se trata de LINKS EXTERNOS:
+     é necessário as tags: Target e rel
+     Para quando o usuario clicar, abrir em uma outra aba.-->
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório publico no Github</a> </p>
+
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">canal gratuito do youtube</a></p>
+
+    <h1>Usando links Internos</h1>
+    <!--Faz a relação com outra pagina qu esta dentro do nosso servidor-->
+    <!--no ref, só apertar CRT + ESPAÇO-->
+    <!--O target="_self" serve para a rbir arquivos na mesma pagina web-->
+    <p>Esta é a primeira página do site, se você quiser pode acessar a minha <a href="pag002.html"  target="_self" rel="next">segunda página</a> </p>
+
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a></p>
+
+    <h1>Links para Download</h1>
+    <ul>
+        <!--Usamos a href="#"" para quando o link é vazio-->
+        <li> <a href="livro/meulivro.pdf.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a> </li>
+
+        <li> <a href="livro/meulivro.zip.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a> </li>
+    </ul>
+</body>
+</html>

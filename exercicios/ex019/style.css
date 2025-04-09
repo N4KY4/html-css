@@ -1,0 +1,60 @@
+@charset "UFT-8";
+
+body{
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(189, 132, 62);
+}
+
+h2{
+    color: rgb(224, 175, 116);
+}
+
+    /*So pode ter o mesmo id no código*/
+
+/*
+                SELETORES PERSONALIZADOS:
+Lá no html colocamos um id="principal" nele, assim no css, identificamos ele como #principal.
+A serquilha # identifica os id
+    
+    HTML -> id
+    CSS -> #
+
+    HTML -> class
+    CSS -> .
+*/
+h1#principal{
+    text-align: center;
+    background-color:   #bd843e;
+    color:bisque;
+}
+
+/* Coloca-se só .basico, pois não é necessário colocar o elemento h2
+
+Podemos colocar duas class dentro de um unico elemento (mesmo ele tendo um id, porem o id se sobrepões)
+
+Como por exemplo no h2 avançado no html
+        class="avancado destaque"
+Sem separar por virgulas*/
+
+.basico{
+    color: #3c805e;
+    font-weight: bolder;
+}
+
+.intermediario{
+    color: #80783c;
+    font-weight: bolder;
+}
+
+.avancado{
+    color: #803c3d;
+    font-weight: bolder;
+}
+
+.destaque{
+    background-color: #f3d893 ;
+}
