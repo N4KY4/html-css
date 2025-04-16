@@ -65,7 +65,7 @@ header > p{
     padding-right: 10px;
     padding-left: 10px;
     margin: auto; /*Para centralizar o bloco*/
-    margin-bottom: 30px; /*espaço para quando o site estiver diminuido*/
+    padding-bottom: 50px; /*espaço para quando o site estiver diminuido*/
     text-shadow: 2px 2px 0px #00000074;
 }
 
