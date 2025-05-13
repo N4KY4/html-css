@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 100vh; /*100 da altura da viewport*/
@@ -23,10 +23,24 @@
                 
                 cover -> Cobre a tela inteira (100% da viewport), mesmo que temha que cortar da tela (é o ideal para gente)
             */
+
+            background-attachment: fixed;
+            /*
+            scroll -> O fundo rola junto com o conteúdo
+            fixed -> O fundo fica fixo e somente o conteúdo que rola
+            */
+
+            /*SHORTHAND - BACKGROUND
+            color > image > position > repeat > size > attachment 
+            Porém o size precisa ser escrito separado*/
+            /* 
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+            */
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px; /*Não vai quebrar o site*/
             padding: 10px;
             margin: auto; /*alinhar ao centro*/
             border: 1px solid darkblue;
@@ -37,7 +51,16 @@
 <body>
     <main>
     <h1>Teste de Imagem de fundo</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus earum nulla voluptatum? Reprehenderit consequatur est cumque molestiae saepe expedita corrupti soluta qui explicabo eos nemo labore reiciendis, voluptatum, tempore eligendi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusantium at quasi pariatur, molestiae sequi molestias aspernatur veniam maiores perferendis nemo. Eum non est dolorum et quia delectus repellendus autem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae mollitia commodi tempore. Perferendis minima mollitia cupiditate ipsa sunt at explicabo nostrum voluptates architecto culpa! Ea nesciunt quia fugit quisquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus earum nulla voluptatum? Reprehenderit consequatur est cumque molestiae saepe expedita corrupti soluta qui explicabo eos nemo labore reiciendis, voluptatum, tempore eligendi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusantium at quasi pariatur, molestiae sequi molestias aspernatur veniam maiores perferendis nemo. Eum non est dolorum et quia delectus repellendus autem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae mollitia commodi tempore. Perferendis minima mollitia cupiditate ipsa sunt at explicabo nostrum voluptates architecto culpa! Ea nesciunt quia fugit quisquam.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, hic ipsam, fugiat eius ipsa modi ea nobis obcaecati nihil suscipit atque praesentium, ab tenetur quod minima cumque distinctio illo perspiciatis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus obcaecati quia totam quos facilis. Qui, sapiente numquam reiciendis, maxime totam voluptatibus molestiae, pariatur tenetur modi placeat exercitationem rem repellendus quos.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut aliquam hic repudiandae eaque voluptates mollitia accusamus voluptatibus totam pariatur, tempora facere autem voluptate! Doloribus accusamus inventore officiis dignissimos, debitis cum.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus earum nulla voluptatum? Reprehenderit consequatur est cumque molestiae saepe expedita corrupti soluta qui explicabo eos nemo labore reiciendis, voluptatum, tempore eligendi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusantium at quasi pariatur, molestiae sequi molestias aspernatur veniam maiores perferendis nemo. Eum non est dolorum et quia delectus repellendus autem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae mollitia commodi tempore. Perferendis minima mollitia cupiditate ipsa sunt at explicabo nostrum voluptates architecto culpa! Ea nesciunt quia fugit quisquam.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, hic ipsam, fugiat eius ipsa modi ea nobis obcaecati nihil suscipit atque praesentium, ab tenetur quod minima cumque distinctio illo perspiciatis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus obcaecati quia totam quos facilis. Qui, sapiente numquam reiciendis, maxime totam voluptatibus molestiae, pariatur tenetur modi placeat exercitationem rem repellendus quos.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut aliquam hic repudiandae eaque voluptates mollitia accusamus voluptatibus totam pariatur, tempora facere autem voluptate! Doloribus accusamus inventore officiis dignissimos, debitis cum.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus earum nulla voluptatum? Reprehenderit consequatur est cumque molestiae saepe expedita corrupti soluta qui explicabo eos nemo labore reiciendis, voluptatum, tempore eligendi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusantium at quasi pariatur, molestiae sequi molestias aspernatur veniam maiores perferendis nemo. Eum non est dolorum et quia delectus repellendus autem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae mollitia commodi tempore. Perferendis minima mollitia cupiditate ipsa sunt at explicabo nostrum voluptates architecto culpa! Ea nesciunt quia fugit quisquam.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, hic ipsam, fugiat eius ipsa modi ea nobis obcaecati nihil suscipit atque praesentium, ab tenetur quod minima cumque distinctio illo perspiciatis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus obcaecati quia totam quos facilis. Qui, sapiente numquam reiciendis, maxime totam voluptatibus molestiae, pariatur tenetur modi placeat exercitationem rem repellendus quos.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut aliquam hic repudiandae eaque voluptates mollitia accusamus voluptatibus totam pariatur, tempora facere autem voluptate! Doloribus accusamus inventore officiis dignissimos, debitis cum.
+    </p>
     </main>
 </body>
 </html>
