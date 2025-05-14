@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+*{
+    /*Configuração para todos os elementos*/
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100%; /*Ou 100vh*/
+    background-color: darkgray;
+
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center; /*Centralizar*/
+}
+
+header > h1{
+    padding-top: 50px; /*Espaço do topo*/
+    /*
+    Transformar todas letras em maiusculas e minusculas
+    text-transform: uppercase
+    text-transform: lowercase
+    */
+
+    /*OU, podemos usar o font-variant: small-caps;
+    Tudo maiusculo porem as primeiras letras maiores ainda*/
+    font-variant: small-caps;
+}
+
+header > p{
+    padding-bottom: 50px; /*Para dar mais espaço tanto para cima quanto para baixo*/
+}
+
+a{
+    color: white;
+    text-decoration: none; /*sem sublinhado*/
+    font-weight: bolder;
+
+}
+
+a:hover{
+    text-decoration: underline; /*Fica sublinhado assim que o mouse passa por cima do link*/
+}
+
+section{
+    /*Serve tanto para a Normal quanto para a Imagem*/
+    /*Espaço para o efeito paralax
+    Faz com que ganhe mais espaço, e já vai ajustando a altura ao redimensionar a pagina*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*Espaçamento duplo das linhas*/
+    padding-left: 30px; /*Para sair do canto da tela*/
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.223);
+    width: 400px;
+}
+
+footer{
+    background-color: black;
+    color: beige;
+    text-align: center;
+    padding: 10px;
+}
