@@ -1,15 +1,29 @@
 @charset "UTF-8";
 
+/*Fonte: Passion One*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+/*Fonte: Sriracha*/
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+
 *{
     /*Configuração para todos os elementos*/
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body{
     min-height: 100%; /*Ou 100vh*/
     background-color: darkgray;
-
+    font-family: var(--fonte1);
 }
 
 header{
@@ -29,6 +43,8 @@ header > h1{
     /*OU, podemos usar o font-variant: small-caps;
     Tudo maiusculo porem as primeiras letras maiores ainda*/
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw; /*Vai ajudar a LARGURA da tela*/
 }
 
 header > p{
@@ -54,6 +70,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em; /*Espaçamento duplo das linhas*/
     padding-left: 30px; /*Para sair do canto da tela*/
+    font-family: var(--fonte3);
+    font-size: 3.5vw; /*Vai ajudar a LARGURA da tela*/
 }
 
 section.normal{
@@ -67,8 +85,9 @@ section.imagem{
 }
 
 section.imagem > p{
+    display: inline-block; /*Vai criar a caixa que se ajusta com o tamanho*/
+    padding: 5px; /*Para dar um espaço*/
     background-color: rgba(0, 0, 0, 0.223);
-    width: 400px;
 }
 
 footer{
