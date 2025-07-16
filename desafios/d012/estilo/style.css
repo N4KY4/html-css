@@ -74,21 +74,47 @@ section{
     font-size: 3.5vw; /*Vai ajudar a LARGURA da tela*/
 }
 
+section > p{
+    padding-bottom: 2em; /*Para ele dar uma espaçadinha*/
+}
+
 section.normal{
     background-color: white;
     color: black;
 }
 
 section.imagem{
+    /*Serve para todas as imagens*/
     background-color: rgb(51, 51, 51);
     color: white;
-}
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.579);/*Altura,largura, espalhamento, ampliação, cor*/
 
+    /*EFEITO PARALLAX*/
+
+    background-size: cover; /*Pois fica melhor para enxergar, antes a imagem estava muito grande*/
+
+    /*Fixando a imagem*/
+    background-attachment: fixed;/*Fica fixo*/
+}
 section.imagem > p{
     display: inline-block; /*Vai criar a caixa que se ajusta com o tamanho*/
     padding: 5px; /*Para dar um espaço*/
-    background-color: rgba(0, 0, 0, 0.223);
+    background-color: rgba(0, 0, 0, 0.5);
+
+    /*Colocando SOMBRA no TEXTO*/
+    text-shadow: 1px 1px 0px black;
 }
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center; /*Para ficar centralizado à direita*/   
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center; /*Para ficar centralizado à direita*/
+}
+
 
 footer{
     background-color: black;
